@@ -84,16 +84,16 @@ function App() {
       {/* Section 1: Header */}
       <header className="app-header">
         <h1 className="typed">
-          Introduction to Latin Verbs!
+          Introduction to Latin Verbs
         </h1>
       </header>
 
-      {/* Section 2: Description */}
+      {/* Section 2: Description
       <div className="intro-text">
         <h5 className="fade-in">
           This website provides an introduction to Latin verbs. Click on each button to access a detailed textbook chapter (written by me!) on the relevant subject matter. Feel free to quiz yourself below to consolidate your knowledge!
         </h5>
-      </div>
+      </div> */}
 
       {/* Section 3: Contents / Links to Latin Chapters */}
       <main>

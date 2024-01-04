@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background-color: #A2D2FF;
+  background-color: white;
   min-height: 100vh;
   overflow: auto;
 }
@@ -14,7 +14,7 @@
   word-wrap: break-word;
   color: #023E7D;
   padding: 5vh;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'American Typewriter', sans-serif;
 }
 
 .typed {
@@ -23,7 +23,7 @@
   width: 0;
   animation: typing;
   animation-duration: 5s;
-  animation-timing-function: steps(30, end);
+  animation-timing-function: steps(50, end);
   animation-fill-mode: forwards;
   font-size: calc(10px + 2.5vmin);
 }
@@ -31,17 +31,6 @@
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
-
-.intro-text {
-  color: #023E7D;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: center;
-  height: 10%;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .fade-in {
@@ -56,25 +45,24 @@
 
 .app-contents {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
   padding-left: 10vw;
   padding-right: 10vw;
+  min-height: 20vh;
 }
 
 .testing-button {
-  background-color: aquamarine;
-  font-size: calc(10px + 1vmin);
+  background-color: #f9abff;
+  font-size: calc(10px + 1.3vmin);
   color: #023E7D;
   border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Avenir", sans-serif;
 }
 
 .testing-button:hover {
-  background-color: #FF6B6B;
+  background-color: #87CEEB;
 }
 
 .testing-section {
@@ -85,21 +73,22 @@
 }
 
 .question-card {
-  background-color: aquamarine;
-  padding: 10px;
+  padding: 20px;
   width: 60%;
   height: 50%;
   margin: auto auto;
-  margin-bottom: 10px;
+  margin-bottom: 10vh;
   border-radius: 10px;
   border-style: solid;
   border-width: 3px;
   color: #023E7D;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background-color: #fff;
 }
 
 .final-results {
-  background-color: #FFD60A;
+  background-color: white;
   border: 3px solid #023E7D;
   padding: 10px;
   width: 40%;
@@ -107,21 +96,22 @@
   margin: auto auto;
   border-radius: 10px;
   color: #023E7D;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
 .restart {
-  background-color: lightpink;
+  background-color: #f9abff;
   padding: 16px 24px;
   text-align: center;
   display: inline-block;
   border-radius: 24px;
   border: solid #023E7D;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 1vh;
 }
 
 .restart:hover {
-  background-color: #FF6B6B;
+  background-color: #87CEEB;
 }
 
 .close {
@@ -130,7 +120,7 @@
 }
 
 .close:hover {
-  background-color: #FF6B6B;
+  background-color: #87CEEB;
 }
 
 ul {
@@ -138,7 +128,7 @@ ul {
 }
 
 li {
-  background-color: #FFD60A;
+  background-color: #d3ecf3;
   padding: 16px;
   border: 3px solid #023E7D;
   border-radius: 20px;
@@ -149,5 +139,5 @@ li {
 }
 
 li:hover {
-  background-color: #FF6B6B;
+  background-color: #87CEEB;
 }
