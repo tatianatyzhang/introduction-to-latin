@@ -1,8 +1,12 @@
 import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import questions from './Questions.js';
 import Contents from './Contents.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+<style>
+@import url('https://fonts.cdnfonts.com/css/fredoka-one');
+</style>
+                
 
 function App() {
 
@@ -10,17 +14,16 @@ function App() {
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showQuiz, setQuiz] = useState(false);
   const [startQuiz, setStartQuiz] = useState(false);
 
   // Show Final results
   function ShowResults() {
     return (
       < div className="final-results">
-        <h1>Final Results</h1>
-        <h2>
+        <h2>Final Results</h2>
+        <h4>
           {score} out of 5 correct
-        </h2>
+        </h4>
         <div>
           <button onClick={() => restartGame()} className="restart">Restart Game</button>
         </div>
@@ -37,7 +40,7 @@ function App() {
     return (
       <div className="question-card">
         <h2>Question {currentQuestion + 1} out of 5</h2>
-        <h3>{questions[currentQuestion].question}</h3>
+        <h4>{questions[currentQuestion].question}</h4>
         <ul>
           {questions[currentQuestion].options.map((option, index) => {
             return (
@@ -50,7 +53,7 @@ function App() {
   }
 
   function optionClicked(option) {
-    if (option == questions[currentQuestion].answer) {
+    if (option === questions[currentQuestion].answer) {
       setScore(score + 1);
     }
 
@@ -80,14 +83,14 @@ function App() {
     <div className="app">
       {/* Section 1: Header */}
       <header className="app-header">
-        <h1>
-          Introductory Latin for Kids: A Straightforward Course for Young Beginners
+        <h1 className="typed">
+          Introduction to Latin Verbs!
         </h1>
       </header>
 
       {/* Section 2: Description */}
       <div className="intro-text">
-        <h5>
+        <h5 className="fade-in">
           This website provides an introduction to Latin verbs. Click on each button to access a detailed textbook chapter (written by me!) on the relevant subject matter. Feel free to quiz yourself below to consolidate your knowledge!
         </h5>
       </div>

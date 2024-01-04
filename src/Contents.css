@@ -1,6 +1,13 @@
 .Contents-buttons {
     flex: 0 0 auto;
     margin: 5px;
-    background-color:#61dafb;
-    font-size: 1.3vw;
+    background-color:#FFD60A;
+    font-size: calc(10px + 1vmin);
+    border-radius: 20px;
+    border: solid #023E7D;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .Contents-buttons:hover {
+    background-color: #FF6B6B;
   }
